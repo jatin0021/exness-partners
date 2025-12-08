@@ -1,17 +1,14 @@
-import { useState } from 'react';
-import { LayoutGrid, Globe, Clock, Bell, User, Menu, X } from 'lucide-react';
+import { Bell, UserCircle, Menu, X } from 'lucide-react';
+import exnessLogo from '/logo.svg';
+import exnessLogoMobile from '/logoMobile.svg';
 
 // The main Topbar component
-const Topbar = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+const Topbar = ({ isMobileMenuOpen, setIsMobileMenuOpen }) => {
 
   // Array of primary navigation items (icons)
   const primaryNavItems = [
-    { id: 'apps', icon: LayoutGrid, label: 'Apps', desktopOnly: true },
-    { id: 'language', icon: Globe, label: 'Language', desktopOnly: true },
-    { id: 'history', icon: Clock, label: 'History', desktopOnly: true },
-    { id: 'notifications', icon: Bell, label: 'Notifications', hasIndicator: true },
-    { id: 'profile', icon: User, label: 'Profile' },
+    { id: 'notifications', icon: Bell, label: 'Notifications' },
+    { id: 'profile', icon: UserCircle, label: 'Profile' },
   ];
 
   // Component for a single icon link
@@ -20,7 +17,7 @@ const Topbar = () => {
       title={label}
       className={`relative p-2 cursor-pointer transition-colors duration-150 rounded-full hover:bg-gray-100 ${className}`}
     >
-      <Icon className="w-5 h-5 text-gray-700" />
+      <Icon className="w-5 h-5 text-gray-700" strokeWidth={2.5} />
       {/* Red notification indicator */}
       {hasIndicator && (
         <div className="absolute top-1 right-1 w-2 h-2 bg-red-500 rounded-full border-2 border-white"></div>
@@ -29,27 +26,43 @@ const Topbar = () => {
   );
 
   return (
-    <header className="bg-white w-full border-b border-gray-100 z-10">
-      <div className="mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+    <header className="bg-transparent w-full border-b border-gray-200 z-10 h-[57px]">
+      <div className="mx-auto px-4 h-full">
+        <div className="flex justify-between items-center h-full">
 
-          {/* Left Section - Logo */}
-          <div className="flex-shrink:0">
-            <h1 className="text-3xl lg:text-5xl font-semi-bold text-gray-900 tracking-tight select-none">
-              exness
-            </h1>
+          {/* Left Section - Mobile Toggle & Logo */}
+          <div className="flex items-center">
+            {/* Mobile Menu Button (Visible on md screens and down) */}
+            <div className="md:hidden mr-2">
+              <button
+                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                className="p-1 text-gray-700 rounded-full hover:bg-gray-100 transition-colors"
+                aria-label="Toggle navigation menu"
+              >
+                {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+              </button>
+            </div>
+
+            {/* Logo */}
+            <div className="flex-shrink-0 flex items-center">
+              {/* Desktop Logo */}
+              <img src={exnessLogo} alt="exness Partners" className="hidden md:block h-10 w-auto" />
+              {/* Mobile Logo */}
+              <img src={exnessLogoMobile} alt="exness Partners" className="block md:hidden h-8 w-auto" />
+            </div>
           </div>
 
-          {/* Right Section - Primary Nav and Menu Button */}
+          {/* Right Section - Balance, Nav Items */}
           <div className="flex items-center space-x-2 sm:space-x-3 md:space-x-4">
             
             {/* Value Display - Always visible */}
-            <div className="hidden sm:block text-sm font-semibold text-gray-700 bg-gray-50 px-3 py-1.5 rounded-full shadow-inner border border-gray-100">
-              $0.00 USD
+            <div className="flex items-baseline text-md font-medium text-gray-900 ">
+              <span className='font-bold'>0.00</span>
+              <span className="text-sm font-normal ml-1">USD</span>
             </div>
 
-            {/* Desktop Icons (Visible on md screens and up) */}
-            <nav className="hidden md:flex items-center space-x-2">
+            {/* Icons (Visible on all screens now for mobile layout match) */}
+            <nav className="flex items-center space-x-1 md:space-x-4">
               {primaryNavItems.map((item) => (
                 <IconLink
                   key={item.id}
@@ -59,47 +72,9 @@ const Topbar = () => {
                 />
               ))}
             </nav>
-
-            {/* Mobile Menu Button (Visible on md screens and down) */}
-            <div className="md:hidden">
-              <button
-                onClick={() => setIsMenuOpen(!isMenuOpen)}
-                className="p-2 text-gray-700 rounded-full hover:bg-gray-100 transition-colors"
-                aria-label="Toggle navigation menu"
-              >
-                {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-              </button>
-            </div>
           </div>
         </div>
       </div>
-
-      {/* Mobile Menu Content (Dropdown) */}
-      {isMenuOpen && (
-        <div className="md:hidden border-t border-gray-200 bg-white shadow-lg">
-          <div className="px-4 pt-2 pb-3 space-y-1 sm:px-6">
-            
-            {/* Mobile-only value display */}
-            <div className="block sm:hidden text-sm font-semibold text-gray-700 bg-gray-50 px-3 py-2 rounded-lg mb-2">
-              $0.00 USD
-            </div>
-
-            {primaryNavItems.map((item) => (
-              // Show all items in the mobile menu, regardless of desktopOnly flag
-              <div
-                key={item.id}
-                className="flex items-center p-3 text-base font-medium text-gray-700 rounded-lg hover:bg-gray-50 cursor-pointer"
-              >
-                <item.icon className="w-5 h-5 mr-3" />
-                <span>{item.label}</span>
-                {item.hasIndicator && (
-                  <div className="ml-auto w-2 h-2 bg-red-500 rounded-full"></div>
-                )}
-              </div>
-            ))}
-          </div>
-        </div>
-      )}
     </header>
   );
 };

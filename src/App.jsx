@@ -9,17 +9,24 @@ import HistoryOfOrders from './pages/Trading/HistoryOfOrders'
 
 const App = () => {
   const [isExpanded, setIsExpanded] = useState(true);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
   return (
     <Router>
       <div className="h-screen flex flex-col">
-        <div className="h-[10%]">
-          <Topbar />
+        <div className="">
+          <Topbar isMobileMenuOpen={isMobileMenuOpen} setIsMobileMenuOpen={setIsMobileMenuOpen} />
         </div>
-        <div className="content flex h-[90%]">
-          <Sidebar isExpanded={isExpanded} setIsExpanded={setIsExpanded} />
+        <div className="content flex flex-1 overflow-hidden">
+          <Sidebar 
+            isExpanded={isExpanded} 
+            setIsExpanded={setIsExpanded} 
+            isMobileMenuOpen={isMobileMenuOpen}
+          />
           <main className="flex-1 overflow-y-auto">
             <Routes>
               <Route path="/" element={<MyAccount />} />
+              <Route path="/dashboard" element={<MyAccount />} />
               <Route path="/exness-terminal" element={<ExnessTerminal />} />
               <Route path="/performance" element={<Performance />} />
               <Route path="/history-of-orders" element={<HistoryOfOrders />} />
