@@ -1,6 +1,6 @@
 import React from 'react';
 
-const MyAccount = () => {
+const Dashboard = () => {
   const steps = [
     {
       id: 'email',
@@ -492,4 +492,4 @@ const MyAccount = () => {
   );
 };
 
-export default MyAccount;
+export default Dashboard;
