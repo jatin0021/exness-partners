@@ -324,7 +324,7 @@ const Materials = () => {
   const [gifFilter, setGifFilter] = useState('All');
 
   return (
-    <div className="p-8 w-full font-['aktiv-grotesk']">
+    <div className="p-8 w-full font-['aktiv-grotesk','poppins']">
       {/* Header Section */}
       <h1 className="text-[32px] font-bold text-gray-900 mb-8 tracking-tight">Promo Materials</h1>
 

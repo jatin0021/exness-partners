@@ -55,7 +55,7 @@ const sidebarItems = [
     id: 'dashboard',
     label: 'Dashboard',
     icon: DashboardIcon,
-    link: '/dashboard',
+    link: '/',
     isCollapsible: false,
   },
   {
