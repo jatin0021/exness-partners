@@ -131,23 +131,21 @@ const languageItem = {
  * Component for a single Menu Item or Sub-Menu Header.
  * Handles the display logic for both expanded and collapsed states.
  */
-const SidebarItem = ({ item, isExpanded }) => {
+const SidebarItem = ({ item, isExpanded, isOpen, onToggle }) => {
   const location = useLocation();
-  // Local state to manage the expansion of sub-menus
-  const [isSubMenuOpen, setIsSubMenuOpen] = useState(item.initialOpen || false);
-
+  
   const Icon = item.icon;
 
   // Determine if this item or any of its sub-items are active
   const isActive = item.link === location.pathname || (item.subItems && item.subItems.some(sub => sub.link === location.pathname));
 
   // Base classes
-  const baseClasses = "flex items-center p-2 rounded-md cursor-pointer transition-all duration-200 border";
+  const baseClasses = "flex items-center p-2 rounded-md cursor-pointer transition-all duration-200 border border-transparent hover:border-gray-400";
   
   // Active state styling: Boxed look with border and background
   const activeClasses = isActive 
-    ? "bg-[#eff2f5] border-[#dce1e7] text-[#151a30]" 
-    : "border-transparent text-[#151a30] hover:bg-[#f3f4f6]";
+    ? "bg-[#eff2f5] border-gray-400 text-[#151a30]" 
+    : "text-[#151a30] hover:bg-[#f3f4f6]";
 
   const iconClass = "text-[#889da9]";
   
@@ -158,7 +156,7 @@ const SidebarItem = ({ item, isExpanded }) => {
   const handleClick = (e) => {
     if (item.isCollapsible) {
       e.preventDefault();
-      setIsSubMenuOpen(!isSubMenuOpen);
+      onToggle(item.id);
     }
   };
 
@@ -184,7 +182,7 @@ const SidebarItem = ({ item, isExpanded }) => {
           {/* Chevron for collapsible items */}
           {item.isCollapsible && (
             <div className="ml-auto transition-transform duration-200">
-              {isSubMenuOpen ? <ChevronUp className="w-4 h-4 text-[#889da9]" /> : <ChevronDown className="w-4 h-4 text-[#889da9]" />}
+              {isOpen ? <ChevronUp className="w-4 h-4 text-[#889da9]" /> : <ChevronDown className="w-4 h-4 text-[#889da9]" />}
             </div>
           )}
         </>
@@ -231,15 +229,15 @@ const SidebarItem = ({ item, isExpanded }) => {
       {renderHeader()}
 
       {/* Sub-Items (only rendered when expanded and sub-menu is open) */}
-      {isExpanded && item.subItems && isSubMenuOpen && (
-        <div className="space-y-0.5 mt-1">
+      {isExpanded && item.subItems && isOpen && (
+        <div className="space-y-2 mt-2">
           {item.subItems.map((subItem) => {
             const isSubActive = subItem.link === location.pathname;
             const subTextClass = isSubActive ? "text-[#151a30] font-medium" : "text-[#151a30] font-normal";
-            const subBgClass = isSubActive ? "bg-[#eff2f5]" : "hover:bg-[#f3f4f6]";
+            const subBgClass = isSubActive ? "bg-[#eff2f5] border-gray-400" : "hover:bg-[#f3f4f6]";
 
             const content = (
-              <div className={`flex items-center justify-between pl-11 pr-3 py-2 rounded-md cursor-pointer text-sm transition-colors duration-200 ${subBgClass}`}>
+              <div className={`flex items-center justify-between pl-4 pr-3 py-2 ml-4 rounded-md cursor-pointer text-sm transition-colors duration-200 border border-transparent hover:border-gray-400 ${subBgClass}`}>
                 <div className={`flex items-center ${subTextClass}`}>
                   {subItem.label}
                   {subItem.isNew && (
@@ -283,33 +281,67 @@ const SidebarItem = ({ item, isExpanded }) => {
  * It is designed to be the default export of this file.
  */
 const Sidebar = ({ isExpanded, setIsExpanded, isMobileMenuOpen }) => {
+  const location = useLocation();
   const toggleSidebar = () => setIsExpanded(!isExpanded);
+  const [isHovered, setIsHovered] = useState(false);
+  const showExpanded = isExpanded || isHovered;
 
-  const widthClass = isExpanded ? 'w-[280px]' : 'w-[56px]';
+  // Initialize open state based on active route
+  const [openItemId, setOpenItemId] = useState(() => {
+     // Check sidebarItems
+     const activeItem = sidebarItems.find(item => 
+       item.isCollapsible && (
+         item.link === location.pathname || 
+         (item.subItems && item.subItems.some(sub => sub.link === location.pathname))
+       )
+     );
+     if (activeItem) return activeItem.id;
+     
+     // Check languageItem (less likely to be active by route, but consistent)
+     if (languageItem.isCollapsible && languageItem.subItems && languageItem.subItems.some(sub => sub.link === location.pathname)) {
+        return languageItem.id;
+     }
+     
+     return null;
+  });
+
+  const handleItemToggle = (id) => {
+    setOpenItemId(prev => prev === id ? null : id);
+  };
+
   const controlLabel = isExpanded ? 'Collapse' : 'Expand';
-
-  // Mobile classes: Fixed, full width, below topbar
-  const mobileClasses = `fixed inset-0 top-[57px] z-40 w-full bg-white transition-transform duration-300 ease-in-out ${isMobileMenuOpen ? 'translate-x-0' : '-translate-x-full'} md:translate-x-0 md:static md:block`;
-  
-  // Desktop classes: Flex item, controlled width
-  const desktopClasses = `flex flex-col h-full bg-white border-r border-gray-200 transition-width duration-300 ease-in-out flex-shrink:0 ${widthClass}`;
 
   return (
     <div
-      className={`${mobileClasses} md:flex md:flex-col md:h-full md:bg-white md:border-r md:border-gray-200 md:transition-width md:duration-300 md:ease-in-out md:flex-shrink-0 ${isExpanded ? 'md:w-[280px]' : 'md:w-[56px]'}`}
-      style={{ transitionProperty: 'width, transform' }}
+      onMouseEnter={() => !isExpanded && setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+      className={`fixed inset-0 top-[57px] z-40 w-full bg-white border-r border-gray-200 transition-all duration-300 ease-in-out flex-shrink-0 
+        ${isMobileMenuOpen ? 'translate-x-0' : '-translate-x-full'} 
+        md:translate-x-0 md:static md:flex md:flex-col md:h-full 
+        ${showExpanded ? 'md:w-[280px]' : 'md:w-[56px]'}`}
     >
       {/* Scrollable Navigation Area */}
-      <div className="flex-1 overflow-y-auto space-y-2 p-2">
+      <div className="flex-1 overflow-y-auto space-y-2 p-2 hidden-scrollbar">
         {sidebarItems.map((item) => (
-          <SidebarItem key={item.id} item={item} isExpanded={isExpanded || isMobileMenuOpen} />
+          <SidebarItem 
+            key={item.id} 
+            item={item} 
+            isExpanded={showExpanded || isMobileMenuOpen} 
+            isOpen={openItemId === item.id}
+            onToggle={handleItemToggle}
+          />
         ))}
         
         {/* Divider */}
         <div className="my-2 border-t border-gray-200" />
 
         {/* Language Selector */}
-        <SidebarItem item={languageItem} isExpanded={isExpanded || isMobileMenuOpen} />
+        <SidebarItem 
+            item={languageItem} 
+            isExpanded={showExpanded || isMobileMenuOpen} 
+            isOpen={openItemId === languageItem.id}
+            onToggle={handleItemToggle}
+        />
       </div>
 
       {/* Collapse/Expand Control Button (Hidden on Mobile) */}
@@ -321,6 +353,10 @@ const Sidebar = ({ isExpanded, setIsExpanded, isMobileMenuOpen }) => {
             title={controlLabel}
             className={`flex items-center w-full justify-center p-2 rounded-lg text-[#889da9] hover:bg-[#f3f4f6] transition-colors duration-200`}
           >
+            {/* Rotate icon based on isExpanded (pinned state) or visual state? 
+                User feedback implies confusion if state doesn't match visual.
+                However, persistent pin state is clearer for the button action.
+                We'll stick to 'isExpanded' to indicate the ACTION (Pin/Unpin). */}
             <div className={`transition-transform duration-300 ${isExpanded ? 'rotate-0' : 'rotate-180'}`}>
               <ChevronsLeftIcon className="w-6 h-6" />
             </div>

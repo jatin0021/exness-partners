@@ -1,11 +1,13 @@
 @import "tailwindcss";
 
-/* Load Aktiv Grotesk from Adobe Fonts / CDN */
-@import url("https://use.typekit.net/xxxxxx.css");
-
 /* Apply globally */
 body {
-  font-family: "aktiv-grotesk", sans-serif;
+  font-family: sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: normal;
 }
 
 @layer utilities {

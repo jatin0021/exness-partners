@@ -24,6 +24,12 @@ import RegistrationTools from './pages/Promo/RegistrationTools'
 import Contacts from './pages/Support/Contacts'
 import Legal from './pages/Support/Legal'
 
+// Settings
+import AccountSettings from './pages/AccountSettings'
+import PersonalInformation from './pages/PersonalInformation'
+import NotificationSettings from './pages/NotificationSettings'
+import MarketingIntegration from './pages/MarketingIntegration'
+
 const App = () => {
   const [isExpanded, setIsExpanded] = useState(true);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -67,6 +73,12 @@ const App = () => {
 
               {/* Legacy/Extra */}
               <Route path="/exness-terminal" element={<ExnessTerminal />} />
+              
+              {/* Account Settings */}
+              <Route path="/settings/profile" element={<AccountSettings />} />
+              <Route path="/settings/profile/personal-info" element={<PersonalInformation />} />
+              <Route path="/settings/profile/notifications" element={<NotificationSettings />} />
+              <Route path="/settings/profile/marketing-integration" element={<MarketingIntegration />} />
             </Routes>
           </main>
         </div>

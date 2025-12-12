@@ -35,69 +35,69 @@ const tabs = [
     <div className="font-bold text-xs leading-none tracking-tighter" style={{ color, fontSize: '12px' }}>GIF</div>
   )},
   { id: 'logos', label: 'Logos', count: '4 items', icon: ({ color }) => (
-    <div className="font-bold text-lg leading-none" style={{ color }}>ex</div>
+    <div className="font-bold text-lg leading-none" style={{ color }}>Br</div>
   )},
 ];
 
 const promoCards = [
   {
     id: 1,
-    title: 'Choose from a variety of metals',
-    description: 'Promote metals beyond gold, such as silver and platinum. Use the assets for stable pricing and competitive conditions to attract a broader audience.',
-    image: 'https://storage-us-gcs.bfldr.com/fv47tgx59rf2xwx4g2crq/v/1278276917/original/EN_Metals_Image_306x204.png?Expires=1765294204&KeyName=gcs-bfldr-prod&Signature=4t_Mp_Ys3pr3KEbNQDE2p3HiIyA=',
+    title: 'Explore Diverse Market Assets',
+    description: 'Promote a wide range of assets including commodities, indices, and crypto. Use these materials to showcase stability and competitive conditions.',
+    image: 'https://images.unsplash.com/photo-1611974765270-ca1258634369?auto=format&fit=crop&w=600&q=80',
     stats: [
-      { label: 'Banners', count: 3 },
-      { label: 'Videos', count: 1 }
+      { label: 'Banners', count: 5 },
+      { label: 'Videos', count: 2 }
     ]
   },
   {
     id: 2,
-    title: 'Trade with enhanced stop-out protection',
-    description: 'Explore promotional materials that highlight Exness’ unique stop-out protection feature. These assets explain how it can help delay or even prevent stop-outs during periods of market volatility.',
-    image: 'https://storage-us-gcs.bfldr.com/rv6nvmgmbmc325kcfk5g98wq/v/1278276963/original/EN_Stop_out_Image_306x204.png?Expires=1765294204&KeyName=gcs-bfldr-prod&Signature=GA43xLAl038OKOhH8A1sFZySuBk=',
+    title: 'Advanced Risk Management Tools',
+    description: 'Highlight features that help traders manage risk effectively. These assets explain protection mechanisms during improved market volatility.',
+    image: 'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=600&q=80',
     stats: [
       { label: 'Banners', count: 4 },
-      { label: 'Videos', count: 4 }
+      { label: 'Videos', count: 3 }
     ]
   },
   {
     id: 3,
-    title: 'Experience next-level trading with Exness',
-    description: 'Check out the creatives that promote a reliable trading platform with tight and stable spreads, fast execution, and seamless withdrawals.',
-    image: 'https://storage-us-gcs.bfldr.com/h3r7rmhgb6hks657k3f8847/v/1278299678/original/EN_Exness_tools_Image_306x204.png?Expires=1765294204&KeyName=gcs-bfldr-prod&Signature=-12vwQl1QwDufL7u7CYz5W9G5xk=',
+    title: 'Next-Generation Trading Platform',
+    description: 'Showcase a reliable platform with fast execution, intuitive interface, and seamless funding options.',
+    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80',
     stats: [
-      { label: 'Banners', count: 10 },
-      { label: 'Videos', count: 5 }
+      { label: 'Banners', count: 8 },
+      { label: 'Videos', count: 6 }
     ]
   },
   {
     id: 4,
-    title: 'Be the trader you were born to be',
-    description: 'Download of the top converting creatives of the "Born to Trade" global campaign. The core message is designed to resonate with serious traders and showcases key product strengths like tight spreads, fast execution, and seamless withdrawals. Use them to drive more traders.',
-    image: 'https://storage-us-gcs.bfldr.com/xcfsqv2s3c46ntpm7n3j8vb5/v/1278299600/original/EN_Born_to_trade_Image_306x204.png?Expires=1765294204&KeyName=gcs-bfldr-prod&Signature=A60Pd0tIO0GrO1wKluWBoWeGtuY=',
+    title: 'Empower Your Trading Journey',
+    description: 'Download top-converting creatives for the global "Empower Your Trade" campaign. Resonate with serious traders using key product strengths.',
+    image: 'https://images.unsplash.com/photo-1565514020176-dbf2277470a1?auto=format&fit=crop&w=600&q=80',
     stats: [
-      { label: 'Banners', count: 7 },
-      { label: 'Landings', count: 1 },
-      { label: 'Videos', count: 31 }
+      { label: 'Banners', count: 6 },
+      { label: 'Landings', count: 2 },
+      { label: 'Videos', count: 12 }
     ]
   },
   {
     id: 5,
-    title: 'Withdraw your money fast',
-    description: 'Access creatives focused on the convenience of the fastest withdrawals. The materials emphasize that withdrawals are processed in under one minute, 24/7, with no commissions.',
-    image: 'https://storage-us-gcs.bfldr.com/mhr6tb7h5nmf5gwwmxs7k9kx/v/1278299755/original/EN_Instant_withdrawals_Image_306x204.png?Expires=1765294204&KeyName=gcs-bfldr-prod&Signature=NYrTKL_SjnEuQaW_3S6ZhyKaJd4=',
+    title: 'Instant Fund Access',
+    description: 'Creatives focused on the convenience of quick withdrawals. Emphasize speed and reliability of payment systems.',
+    image: 'https://images.unsplash.com/photo-1560472354-b33af0c8f938?auto=format&fit=crop&w=600&q=80',
     stats: [
-      { label: 'Banners', count: 6 },
-      { label: 'Videos', count: 3 }
+      { label: 'Banners', count: 5 },
+      { label: 'Videos', count: 2 }
     ]
   },
   {
     id: 6,
-    title: 'Never go into a negative balance',
-    description: 'Discover assets that promote the Negative Balance Protection feature. Materials explain that a trader\'s account balance will never go below zero.',
-    image: 'https://storage-us-gcs.bfldr.com/5s7hqn66svmxbn37sxjgm7vj/v/1278299795/original/EN_Negative_Image_306x204.png?Expires=1765294204&KeyName=gcs-bfldr-prod&Signature=9yJncoEE8fG6AKizQFnOSpnMBEQ=',
+    title: 'Negative Balance Protection',
+    description: 'Promote safety features that ensure client balances never drop below zero, adding an extra layer of security.',
+    image: 'https://images.unsplash.com/photo-1605792657660-596af9009e82?auto=format&fit=crop&w=600&q=80',
     stats: [
-      { label: 'Videos', count: 3 }
+      { label: 'Videos', count: 2 }
     ]
   }
 ];
@@ -106,41 +106,41 @@ const bannerCards = [
   {
     id: 1,
     tag: 'Top converting',
-    image: 'https://d3dpet1g0ty5ed.cloudfront.net/EN_Spreads_Stable_pricing_for_unstable_markets_3-33_Google_970x250.jpg',
-    languages: 'English, Arabic',
-    moreLanguages: '+4',
+    image: 'https://images.unsplash.com/photo-1559526324-4b87b5e36e44?auto=format&fit=crop&w=1000&h=300&q=80',
+    languages: 'English, Spanish',
+    moreLanguages: '+3',
     sizes: '120x600, 160x600, 300x250',
-    moreSizes: '+14',
-    category: "Exness' best pricing"
+    moreSizes: '+10',
+    category: "Best Pricing"
   },
   {
      id: 2,
      tag: 'Top converting',
-     image: 'https://d3dpet1g0ty5ed.cloudfront.net/EN_Spreads_Save_on_every_trade_8-1_Google_970x250.jpg',
-     languages: 'English, Arabic',
-     moreLanguages: '+4',
+     image: 'https://images.unsplash.com/photo-1504639725590-34d0984388bd?auto=format&fit=crop&w=1000&h=300&q=80',
+     languages: 'English, German',
+     moreLanguages: '+2',
      sizes: '120x600, 160x600, 300x250',
-     moreSizes: '+14',
-     category: "Exness' best pricing"
+     moreSizes: '+12',
+     category: "Best Pricing"
   },
    {
     id: 3,
     tag: 'Top converting',
-    image: 'https://d3dpet1g0ty5ed.cloudfront.net/EN-The_best_pricing_on_gold_970x250_GOOGLE.png',
-    languages: 'English, Arabic, Bengali',
-    moreLanguages: '+7',
-    sizes: '120x600, 160x600, 300x250',
-    moreSizes: '+14',
-    category: "Lower your trading cost"
+    image: 'https://images.unsplash.com/photo-1554224154-260327c00c4b?auto=format&fit=crop&w=1000&h=300&q=80',
+    languages: 'English, French, Italian',
+    moreLanguages: '+5',
+    sizes: '728x90, 300x600, 320x100',
+    moreSizes: '+8',
+    category: "Low Costs"
   },
   {
      id: 4,
      tag: 'New',
-     image: 'https://d3dpet1g0ty5ed.cloudfront.net/EN_PK_C1_CRYPTO_C2_T1_ETH_67_T2_PERFORMANCE_D-3-3_STATIC_960X300_Q4_2025.jpg',
-     languages: 'English, Spanish (LATAM)',
+     image: 'https://images.unsplash.com/photo-1518546305927-5a555bb7020d?auto=format&fit=crop&w=1000&h=300&q=80',
+     languages: 'English, Portuguese',
      moreLanguages: null,
      sizes: '300x250, 320x50, 320x480',
-     moreSizes: '+10',
+     moreSizes: '+5',
      category: "Crypto"
   }
 ];
@@ -149,32 +149,32 @@ const videoCards = [
   {
     id: 1,
     tag: 'Top converting',
-    poster: 'https://d3dpet1g0ty5ed.cloudfront.net/Stop_out_Protection_800x450.png',
-    title: 'Trade with confidence: Stop Out Protection',
-    description: 'Enjoy Stop Out Protection, a proprietary feature that helps delay or avoid stop outs, making your trades stronger during volatility.',
-    languages: 'English, Arabic, Bengali',
-    moreLanguages: '+6',
-    aspectRatios: ['Horizontal', 'Vertical', 'Square'],
+    poster: 'https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?auto=format&fit=crop&w=800&h=450',
+    title: 'Trade with Confidence',
+    description: 'Enjoy protection features that help delay or avoid stop outs, making your trades stronger.',
+    languages: 'English, Spanish',
+    moreLanguages: '+4',
+    aspectRatios: ['Horizontal', 'Vertical'],
     moreRatios: '+1',
-    categories: ['Stop out protection']
+    categories: ['Risk Protection']
   },
   {
     id: 2,
     tag: 'Top converting',
-    poster: 'https://d3dpet1g0ty5ed.cloudfront.net/GOLD_800x450.png',
-    title: 'Thrive in the gold market',
-    description: 'Trade gold with better-than-market conditions.',
-    languages: 'English, Arabic, Bengali',
-    moreLanguages: '+3',
-    aspectRatios: ['Horizontal', 'Vertical', 'Square'],
+    poster: 'https://images.unsplash.com/photo-1610375461246-d5de5a005578?auto=format&fit=crop&w=800&h=450',
+    title: 'Thrive in the Gold Market',
+    description: 'Trade gold with better-than-market conditions and tight spreads.',
+    languages: 'English, German',
+    moreLanguages: '+2',
+    aspectRatios: ['Horizontal', 'Square'],
     moreRatios: '+1',
-    categories: ['Metals', 'Trade metals']
+    categories: ['Metals', 'Trading']
   },
   {
     id: 3,
     tag: 'New',
     poster: null,
-    videoSrc: 'https://storage-us-gcs.bfldr.com/25sfphfgcp953fkf6r5knk/v/1291273271/original/EN_GLOBAL_C1_SWITCH_C2_T1_SPREAD_UGC_PAYLESS_T2_PERFORMANCE_9x16_45sec_VIDEO_Q4_2025.mp4',
+    videoSrc: 'https://www.w3schools.com/html/mov_bbb.mp4',
     languages: 'English',
     aspectRatios: ['Vertical'],
     categories: ['Spreads']
@@ -183,11 +183,11 @@ const videoCards = [
     id: 4,
     tag: 'New',
     poster: null,
-    videoSrc: 'https://storage-us-gcs.bfldr.com/g457b6qsh3g7m7q4pkm5pmb/v/1291271485/original/EN_GLOBAL_C1_SWITCH_C2_T1_NOFEE_UGC_CUTCOSTS_T2_PERFORMANCE_9x16_15sec_VIDEO_Q4_2025.mp4',
-    languages: 'English, Bengali',
-    moreLanguages: '+3',
+    videoSrc: 'https://www.w3schools.com/html/movie.mp4',
+    languages: 'English, French',
+    moreLanguages: '+1',
     aspectRatios: ['Vertical'],
-    categories: ["Exness' unique features"]
+    categories: ["Unique Features"]
   }
 ];
 
@@ -195,68 +195,68 @@ const landingCards = [
   {
     id: 1,
     tag: 'Top converting',
-    image: 'https://d3dpet1g0ty5ed.cloudfront.net/EN_Spreads_Stable_pricing_for_unstable_markets_3-33_Google_970x250.jpg', // Placeholder
+    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1000&h=300',
     title: null,
     description: null,
-    languages: 'English, Arabic',
-    moreLanguages: '+4',
-    category: "Exness' best pricing",
+    languages: 'English, Spanish',
+    moreLanguages: '+3',
+    category: "Best Pricing",
     link: '#'
   },
   {
     id: 2,
     tag: 'Top converting',
-    image: 'https://d3dpet1g0ty5ed.cloudfront.net/EN-The_best_pricing_on_gold_970x250_GOOGLE.png',
-    title: 'The best spreads on gold',
+    image: 'https://images.unsplash.com/photo-1579532537598-6a8624779047?auto=format&fit=crop&w=1000&h=300',
+    title: 'Best Spreads on Gold',
     description: 'Learn how to trade gold with tight and stable spreads to give your strategy an advantage.',
-    languages: 'English, Arabic, Bengali',
-    moreLanguages: '+7',
-    category: "Exness' best pricing",
-    link: 'https://www.exnesspromo.com/en/trade-metals-superiority/'
+    languages: 'English, Arabic',
+    moreLanguages: '+5',
+    category: "Best Pricing",
+    link: '#'
   },
   {
     id: 3,
     tag: 'Top converting',
-    image: 'https://d3dpet1g0ty5ed.cloudfront.net/EN_Spreads_Save_on_every_trade_8-1_Google_970x250.jpg', // Placeholder
-    title: 'Best pricing on oil',
+    image: 'https://images.unsplash.com/photo-1519681393798-2f61924730a9?auto=format&fit=crop&w=1000&h=300',
+    title: 'Best Pricing on Oil',
     description: 'Discover how to trade oil with industry-leading spreads.',
-    languages: 'English, Arabic, French',
-    moreLanguages: '+5',
-    category: "Exness' best pricing",
-    link: 'https://www.exnesspromo.com/en/trade-oil-superiority/'
+    languages: 'English, French',
+    moreLanguages: '+4',
+    category: "Best Pricing",
+    link: '#'
   },
   {
     id: 4,
     tag: 'Top converting',
-    image: 'https://d3dpet1g0ty5ed.cloudfront.net/EN_Exness_tools_Image_306x204.png', // Placeholder
-    title: 'One platform, multiple instruments',
-    description: 'Diversify your portfolio with a wide range of instruments on a user-friendly Exness trading platform, designed for all trading levels.',
-    languages: 'English, Arabic, French',
-    moreLanguages: '+5',
-    category: "Trade multi-assets",
-    link: 'https://www.exnesspromo.com/en/trade-multi-assets/'
+    image: 'https://images.unsplash.com/photo-1444653614773-995cb1ef902a?auto=format&fit=crop&w=600&h=400',
+    title: 'One Platform, Multiple Instruments',
+    description: 'Diversify your portfolio with a wide range of instruments on a user-friendly platform.',
+    languages: 'English, German',
+    moreLanguages: '+2',
+    category: "Multi-Asset",
+    link: '#'
   },
   {
     id: 5,
     tag: 'Top converting',
-    image: 'https://d3dpet1g0ty5ed.cloudfront.net/EN_Born_to_trade_Image_306x204.png', // Placeholder
-    title: 'Trade stocks with zero commission',
+    image: 'https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?auto=format&fit=crop&w=600&h=400',
+    title: 'Trade Stocks Commission-Free',
     description: 'Trade stocks of the biggest names in the international market with low transaction costs.',
-    languages: 'English, Arabic, French',
-    moreLanguages: '+5',
+    languages: 'English, Italian',
+    moreLanguages: '+3',
     category: "Stocks",
-    link: 'https://www.exnesspromo.com/en/trade-stocks/'
+    link: '#'
   },
   {
     id: 6,
     tag: 'Top converting',
-    image: 'https://d3dpet1g0ty5ed.cloudfront.net/EN_Metals_Image_306x204.png', // Placeholder
-    title: 'Trade oil with better-than-market conditions',
-    description: 'Enjoy better-than-market conditions for trading oil with Exness, including tight spreads.',
-    languages: 'English, Arabic, French',
-    moreLanguages: '+5',
-    category: "Trade oil",
-    link: 'https://www.exnesspromo.com/en/trade-oil/'
+    image: 'https://images.unsplash.com/photo-1518186285589-2f7649de83e0?auto=format&fit=crop&w=600&h=400',
+    title: 'Trade Oil with Better Conditions',
+    description: 'Enjoy better-than-market conditions for trading oil, including tight spreads.',
+    languages: 'English, Portuguese',
+    moreLanguages: '+3',
+    category: "Commodities",
+    link: '#'
   }
 ];
 
@@ -266,22 +266,22 @@ const gifCards = [
   {
     id: 1,
     tag: 'New',
-    image: 'https://d3dpet1g0ty5ed.cloudfront.net/EN_Take_Control_300x300px.gif',
-    title: 'Save on trading costs',
-    description: "Keep more of what you earn with Exness' tight spreads and swap-free trading on popular assets.",
+    image: 'https://images.unsplash.com/photo-1556742049-0cfed4f7a07d?auto=format&fit=crop&w=300&h=300',
+    title: 'Save on Trading Costs',
+    description: "Keep more of what you earn with tight spreads and swap-free trading on popular assets.",
     languages: 'English, Indonesian',
-    moreLanguages: '+3',
+    moreLanguages: '+2',
     sizes: '300x300, 300x600, 728x90',
-    category: "Lower your trading cost"
+    category: "Low Costs"
   },
   {
     id: 2,
     tag: 'New',
-    image: 'https://d3dpet1g0ty5ed.cloudfront.net/EN_Trading_Conditions_300x300px.gif',
-    title: 'Take control of your forex trading',
-    description: 'Trade FX majors, minors, and exotics with tight spreads and flexible leverage.',
-    languages: 'English, Indonesian',
-    moreLanguages: '+3',
+    image: 'https://images.unsplash.com/photo-1612178991541-b48cc8e92a4d?auto=format&fit=crop&w=300&h=300',
+    title: 'Take Control of Your Trading',
+    description: 'Trade majors, minors, and exotics with tight spreads and flexible leverage.',
+    languages: 'English, Thai',
+    moreLanguages: '+2',
     sizes: '300x300, 300x600, 728x90',
     category: "Forex"
   }
@@ -290,26 +290,26 @@ const gifCards = [
 const logoCards = [
   {
     id: 1,
-    image: 'https://d3dpet1g0ty5ed.cloudfront.net/Exness_Logo_Dark.svg',
-    title: 'Exness Logo Dark',
+    image: 'https://placehold.co/200x50/F3F4F6/111827?text=BRAND+Dark',
+    title: 'Brand Logo Dark',
     bg: 'bg-white'
   },
   {
     id: 2,
-    image: 'https://d3dpet1g0ty5ed.cloudfront.net/Exness_Logo_White.svg',
-    title: 'Exness Logo White',
+    image: 'https://placehold.co/200x50/111827/FFFFFF?text=BRAND+White',
+    title: 'Brand Logo White',
     bg: 'bg-[#0B1221]'
   },
   {
     id: 3,
-    image: 'https://d3dpet1g0ty5ed.cloudfront.net/Exness_Partners_Logo_Horizontal_Dark.svg',
-    title: 'Exness Partners Logo Horizontal',
+    image: 'https://placehold.co/200x50/F3F4F6/111827?text=PARTNERS+Horizontal',
+    title: 'Partners Logo Horizontal',
     bg: 'bg-white'
   },
   {
     id: 4,
-    image: 'https://d3dpet1g0ty5ed.cloudfront.net/Exness_Partners_Logo_Portrait_Dark.svg',
-    title: 'Exness Partners Logo Portrait',
+    image: 'https://placehold.co/200x50/F3F4F6/111827?text=PARTNERS+Vertical',
+    title: 'Partners Logo Portrait',
     bg: 'bg-white'
   }
 ];
@@ -324,9 +324,9 @@ const Materials = () => {
   const [gifFilter, setGifFilter] = useState('All');
 
   return (
-    <div className="p-8 w-full font-['aktiv-grotesk','poppins']">
+    <div className="p-8 w-full">
       {/* Header Section */}
-      <h1 className="text-[32px] font-bold text-gray-900 mb-8 tracking-tight">Promo Materials</h1>
+      <h1 className="text-[32px] text-gray-900 mb-8 tracking-tight">Promo Materials</h1>
 
       {/* Tabs Section */}
       <div className="border-b border-gray-200 mb-8 w-full">
@@ -370,7 +370,7 @@ const Materials = () => {
               </div>
               
               <div className="p-6 flex-1 flex flex-col">
-                <h3 className="text-xl font-bold text-gray-900 mb-2 leading-tight">
+                <h3 className="text-xl text-gray-900 mb-2 leading-tight">
                   {card.title}
                 </h3>
                 <p className="text-gray-600 text-sm leading-relaxed mb-6 flex-1">
@@ -485,12 +485,12 @@ const Materials = () => {
           </div>
           
            <div className="mt-8 text-xs text-gray-500 space-y-2 leading-relaxed">
-            <p>Trading is risky. T&Cs apply. exness.com</p>
+            <p>Trading is risky. T&Cs apply. example.com</p>
             <p>1 Spreads may fluctuate and widen due to factors including market volatility and liquidity, news releases, economic events, when markets open or close, and the type of instruments being traded.</p>
-            <p>2 Best spread claims refer to the lowest maximum spreads and the tightest average spreads on the Exness Pro account, for XAUUSD and USOIL based on data collected from 12-25 May 2025, when compared to the corresponding spreads across commission-free accounts of other brokers.</p>
-            <p>3 BTCUSD CFD spreads held at their minimums 99.98%+ of the time (23 Jun-3 Jul 2025).</p>
-            <p>4 Executable spread claims refer to maximum spreads on XAUUSD, USDJPY, EURUSD, and GBPUSD for the first two seconds following high-impact news. This comparison is made between the Exness Pro account and commission-free accounts of several competitors, all excluding agent commission, from 1 January to 23 August 2024.</p>
-            <p>5 At Exness, over 98% of withdrawals are processed automatically. Processing times may vary depending on the chosen payment method.</p>
+            <p>2 Best spread claims refer to the lowest maximum spreads and the tightest average spreads on the Pro account, for XAUUSD and USOIL based on data collected, when compared to the corresponding spreads across commission-free accounts of other brokers.</p>
+            <p>3 BTCUSD CFD spreads held at their minimums 99.98%+ of the time.</p>
+            <p>4 Executable spread claims refer to maximum spreads on XAUUSD, USDJPY, EURUSD, and GBPUSD for the first two seconds following high-impact news. This comparison is made between the Pro account and commission-free accounts of several competitors, all excluding agent commission.</p>
+            <p>5 Over 98% of withdrawals are processed automatically. Processing times may vary depending on the chosen payment method.</p>
           </div>
         </div>
       )}
@@ -543,7 +543,7 @@ const Materials = () => {
                 <div className="p-4 flex-1">
                   {card.title && (
                     <div className="mb-4">
-                      <h3 className="text-lg font-bold text-gray-900 leading-tight mb-1">{card.title}</h3>
+                      <h3 className="text-lg text-gray-900 leading-tight mb-1">{card.title}</h3>
                       <p className="text-gray-600 text-sm">{card.description}</p>
                     </div>
                   )}
@@ -606,12 +606,12 @@ const Materials = () => {
           </div>
           
            <div className="mt-8 text-xs text-gray-500 space-y-2 leading-relaxed">
-            <p>Trading is risky. T&Cs apply. exness.com</p>
+            <p>Trading is risky. T&Cs apply. example.com</p>
             <p>1 Spreads may fluctuate and widen due to factors including market volatility and liquidity, news releases, economic events, when markets open or close, and the type of instruments being traded.</p>
-            <p>2 Best spread claims refer to the lowest maximum spreads and the tightest average spreads on the Exness Pro account, for XAUUSD and USOIL based on data collected from 12-25 May 2025, when compared to the corresponding spreads across commission-free accounts of other brokers.</p>
-            <p>3 BTCUSD CFD spreads held at their minimums 99.98%+ of the time (23 Jun-3 Jul 2025).</p>
-            <p>4 Executable spread claims refer to maximum spreads on XAUUSD, USDJPY, EURUSD, and GBPUSD for the first two seconds following high-impact news. This comparison is made between the Exness Pro account and commission-free accounts of several competitors, all excluding agent commission, from 1 January to 23 August 2024.</p>
-            <p>5 At Exness, over 98% of withdrawals are processed automatically. Processing times may vary depending on the chosen payment method.</p>
+            <p>2 Best spread claims refer to the lowest maximum spreads and the tightest average spreads on the Pro account, for XAUUSD and USOIL based on data collected, when compared to the corresponding spreads across commission-free accounts of other brokers.</p>
+            <p>3 BTCUSD CFD spreads held at their minimums 99.98%+ of the time.</p>
+            <p>4 Executable spread claims refer to maximum spreads on XAUUSD, USDJPY, EURUSD, and GBPUSD for the first two seconds following high-impact news. This comparison is made between the Pro account and commission-free accounts of several competitors, all excluding agent commission.</p>
+            <p>5 Over 98% of withdrawals are processed automatically. Processing times may vary depending on the chosen payment method.</p>
           </div>
         </div>
       )}
@@ -658,7 +658,7 @@ const Materials = () => {
                 <div className="p-4 flex-1">
                    {card.title && (
                     <div className="mb-4">
-                      <h3 className="text-lg font-bold text-gray-900 leading-tight mb-1">{card.title}</h3>
+                      <h3 className="text-lg text-gray-900 leading-tight mb-1">{card.title}</h3>
                       <p className="text-gray-600 text-sm">{card.description}</p>
                     </div>
                   )}
@@ -703,12 +703,12 @@ const Materials = () => {
           </div>
           
            <div className="mt-8 text-xs text-gray-500 space-y-2 leading-relaxed">
-            <p>Trading is risky. T&Cs apply. exness.com</p>
+            <p>Trading is risky. T&Cs apply. example.com</p>
             <p>1 Spreads may fluctuate and widen due to factors including market volatility and liquidity, news releases, economic events, when markets open or close, and the type of instruments being traded.</p>
-            <p>2 Best spread claims refer to the lowest maximum spreads and the tightest average spreads on the Exness Pro account, for XAUUSD and USOIL based on data collected from 12-25 May 2025, when compared to the corresponding spreads across commission-free accounts of other brokers.</p>
-            <p>3 BTCUSD CFD spreads held at their minimums 99.98%+ of the time (23 Jun-3 Jul 2025).</p>
-            <p>4 Executable spread claims refer to maximum spreads on XAUUSD, USDJPY, EURUSD, and GBPUSD for the first two seconds following high-impact news. This comparison is made between the Exness Pro account and commission-free accounts of several competitors, all excluding agent commission, from 1 January to 23 August 2024.</p>
-            <p>5 At Exness, over 98% of withdrawals are processed automatically. Processing times may vary depending on the chosen payment method.</p>
+            <p>2 Best spread claims refer to the lowest maximum spreads and the tightest average spreads on the Pro account, for XAUUSD and USOIL based on data collected, when compared to the corresponding spreads across commission-free accounts of other brokers.</p>
+            <p>3 BTCUSD CFD spreads held at their minimums 99.98%+ of the time.</p>
+            <p>4 Executable spread claims refer to maximum spreads on XAUUSD, USDJPY, EURUSD, and GBPUSD for the first two seconds following high-impact news. This comparison is made between the Pro account and commission-free accounts of several competitors, all excluding agent commission.</p>
+            <p>5 Over 98% of withdrawals are processed automatically. Processing times may vary depending on the chosen payment method.</p>
           </div>
         </div>
       )}
@@ -754,7 +754,7 @@ const Materials = () => {
                 <div className="p-4 flex-1">
                    {card.title && (
                     <div className="mb-4">
-                      <h3 className="text-lg font-bold text-gray-900 leading-tight mb-1">{card.title}</h3>
+                      <h3 className="text-lg text-gray-900 leading-tight mb-1">{card.title}</h3>
                       <p className="text-gray-600 text-sm">{card.description}</p>
                     </div>
                   )}
@@ -804,12 +804,12 @@ const Materials = () => {
           </div>
           
            <div className="mt-8 text-xs text-gray-500 space-y-2 leading-relaxed">
-            <p>Trading is risky. T&Cs apply. exness.com</p>
+            <p>Trading is risky. T&Cs apply. example.com</p>
             <p>1 Spreads may fluctuate and widen due to factors including market volatility and liquidity, news releases, economic events, when markets open or close, and the type of instruments being traded.</p>
-            <p>2 Best spread claims refer to the lowest maximum spreads and the tightest average spreads on the Exness Pro account, for XAUUSD and USOIL based on data collected from 12-25 May 2025, when compared to the corresponding spreads across commission-free accounts of other brokers.</p>
-            <p>3 BTCUSD CFD spreads held at their minimums 99.98%+ of the time (23 Jun-3 Jul 2025).</p>
-            <p>4 Executable spread claims refer to maximum spreads on XAUUSD, USDJPY, EURUSD, and GBPUSD for the first two seconds following high-impact news. This comparison is made between the Exness Pro account and commission-free accounts of several competitors, all excluding agent commission, from 1 January to 23 August 2024.</p>
-            <p>5 At Exness, over 98% of withdrawals are processed automatically. Processing times may vary depending on the chosen payment method.</p>
+            <p>2 Best spread claims refer to the lowest maximum spreads and the tightest average spreads on the Pro account, for XAUUSD and USOIL based on data collected, when compared to the corresponding spreads across commission-free accounts of other brokers.</p>
+            <p>3 BTCUSD CFD spreads held at their minimums 99.98%+ of the time.</p>
+            <p>4 Executable spread claims refer to maximum spreads on XAUUSD, USDJPY, EURUSD, and GBPUSD for the first two seconds following high-impact news. This comparison is made between the Pro account and commission-free accounts of several competitors, all excluding agent commission.</p>
+            <p>5 Over 98% of withdrawals are processed automatically. Processing times may vary depending on the chosen payment method.</p>
           </div>
         </div>
       )}
@@ -836,12 +836,12 @@ const Materials = () => {
           </div>
           
            <div className="mt-8 text-xs text-gray-500 space-y-2 leading-relaxed">
-            <p>Trading is risky. T&Cs apply. exness.com</p>
+            <p>Trading is risky. T&Cs apply. example.com</p>
             <p>1 Spreads may fluctuate and widen due to factors including market volatility and liquidity, news releases, economic events, when markets open or close, and the type of instruments being traded.</p>
-            <p>2 Best spread claims refer to the lowest maximum spreads and the tightest average spreads on the Exness Pro account, for XAUUSD and USOIL based on data collected from 12-25 May 2025, when compared to the corresponding spreads across commission-free accounts of other brokers.</p>
-            <p>3 BTCUSD CFD spreads held at their minimums 99.98%+ of the time (23 Jun-3 Jul 2025).</p>
-            <p>4 Executable spread claims refer to maximum spreads on XAUUSD, USDJPY, EURUSD, and GBPUSD for the first two seconds following high-impact news. This comparison is made between the Exness Pro account and commission-free accounts of several competitors, all excluding agent commission, from 1 January to 23 August 2024.</p>
-            <p>5 At Exness, over 98% of withdrawals are processed automatically. Processing times may vary depending on the chosen payment method.</p>
+            <p>2 Best spread claims refer to the lowest maximum spreads and the tightest average spreads on the Pro account, for XAUUSD and USOIL based on data collected, when compared to the corresponding spreads across commission-free accounts of other brokers.</p>
+            <p>3 BTCUSD CFD spreads held at their minimums 99.98%+ of the time.</p>
+            <p>4 Executable spread claims refer to maximum spreads on XAUUSD, USDJPY, EURUSD, and GBPUSD for the first two seconds following high-impact news. This comparison is made between the Pro account and commission-free accounts of several competitors, all excluding agent commission.</p>
+            <p>5 Over 98% of withdrawals are processed automatically. Processing times may vary depending on the chosen payment method.</p>
           </div>
         </div>
       )}

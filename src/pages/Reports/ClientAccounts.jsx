@@ -207,46 +207,46 @@ const ClientAccounts = () => {
         {/* Metrics Cards Grid - 5 Columns */}
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4 mb-10">
           {/* Card 1: Level 1 Clients */}
-          <div className="bg-white rounded-[4px] p-4 flex flex-col items-center justify-center shadow-sm border-none min-h-[100px]">
+          <div className="bg-white rounded-[4px] p-2 flex flex-col items-center justify-center shadow-sm border-none h-[80px]">
              <div className="flex items-baseline text-[#1d1d1d]">
-                <span className="text-[28px] font-bold">0</span>
+                <span className="text-[24px] font-bold">0</span>
              </div>
-             <span className="text-[13px] text-[#6b7280] mt-1">Level 1 Clients</span>
+             <span className="text-[12px] text-[#6b7280] mt-1">Level 1 Clients</span>
           </div>
           
           {/* Card 2: Clients' accounts */}
-          <div className="bg-white rounded-[4px] p-4 flex flex-col items-center justify-center shadow-sm border-none min-h-[100px]">
+          <div className="bg-white rounded-[4px] p-2 flex flex-col items-center justify-center shadow-sm border-none h-[80px]">
              <div className="flex items-baseline text-[#1d1d1d]">
-                <span className="text-[28px] font-bold">0</span>
+                <span className="text-[24px] font-bold">0</span>
              </div>
-             <span className="text-[13px] text-[#6b7280] mt-1">Clients' accounts</span>
+             <span className="text-[12px] text-[#6b7280] mt-1">Clients' accounts</span>
           </div>
 
           {/* Card 3: Volume (lots) */}
-          <div className="bg-white rounded-[4px] p-4 flex flex-col items-center justify-center shadow-sm border-none min-h-[100px]">
+          <div className="bg-white rounded-[4px] p-2 flex flex-col items-center justify-center shadow-sm border-none h-[80px]">
              <div className="flex items-baseline text-[#1d1d1d]">
-                <span className="text-[28px] font-bold">0</span>
-                <span className="text-[20px] font-bold text-[#1d1d1d]">.0000</span>
+                <span className="text-[24px] font-bold">0</span>
+                <span className="text-[16px] font-bold text-[#1d1d1d]">.0000</span>
              </div>
-             <span className="text-[13px] text-[#6b7280] mt-1">Volume (lots)</span>
+             <span className="text-[12px] text-[#6b7280] mt-1">Volume (lots)</span>
           </div>
 
           {/* Card 4: Volume (Mln. USD) */}
-          <div className="bg-white rounded-[4px] p-4 flex flex-col items-center justify-center shadow-sm border-none min-h-[100px]">
+          <div className="bg-white rounded-[4px] p-2 flex flex-col items-center justify-center shadow-sm border-none h-[80px]">
              <div className="flex items-baseline text-[#1d1d1d]">
-                <span className="text-[28px] font-bold">0</span>
-                <span className="text-[20px] font-bold text-[#1d1d1d]">.0000</span>
+                <span className="text-[24px] font-bold">0</span>
+                <span className="text-[16px] font-bold text-[#1d1d1d]">.0000</span>
              </div>
-             <span className="text-[13px] text-[#6b7280] mt-1">Volume (Mln. USD)</span>
+             <span className="text-[12px] text-[#6b7280] mt-1">Volume (Mln. USD)</span>
           </div>
 
           {/* Card 5: Profit (USD) */}
-          <div className="bg-white rounded-[4px] p-4 flex flex-col items-center justify-center shadow-sm border-none min-h-[100px]">
+          <div className="bg-white rounded-[4px] p-2 flex flex-col items-center justify-center shadow-sm border-none h-[80px]">
              <div className="flex items-baseline text-[#1d1d1d]">
-                <span className="text-[28px] font-bold">0</span>
-                <span className="text-[20px] font-bold text-[#1d1d1d]">.00</span>
+                <span className="text-[24px] font-bold">0</span>
+                <span className="text-[16px] font-bold text-[#1d1d1d]">.00</span>
              </div>
-             <span className="text-[13px] text-[#6b7280] mt-1">Profit (USD)</span>
+             <span className="text-[12px] text-[#6b7280] mt-1">Profit (USD)</span>
           </div>
         </div>
 

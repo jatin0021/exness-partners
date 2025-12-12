@@ -99,7 +99,7 @@ const Dashboard = () => {
         {/* Header */}
         {!activeStepId && (
           <div className="flex items-center gap-2">
-            <h1 className="text-[16px] font-bold text-gray-900">
+            <h1 className="text-[16px] text-gray-900">
               Complete the registration process to unlock all functions
             </h1>
             <div className="text-blue-500 cursor-help">
@@ -160,7 +160,7 @@ const Dashboard = () => {
         {activeStepId === 'email' ? (
             <div className="flex flex-col items-center justify-center py-10 w-full animate-fadeIn">
                 <div className="bg-white p-8 rounded-xl shadow-lg border border-gray-100 max-w-[28rem] w-full text-center relative">
-                    <h2 className="text-2xl font-bold text-gray-900 mb-2">Verify email</h2>
+                    <h2 className="text-2xl text-gray-900 mb-2">Verify email</h2>
                     <p className="text-gray-500 mb-6 text-base">
                         We will send the verification code to <br/>
                         <span className="text-gray-700">ro......81@ekuali.com</span>.
@@ -180,7 +180,7 @@ const Dashboard = () => {
         ) : activeStepId === 'phone' ? (
             <div className="flex flex-col items-center justify-center py-10 w-full animate-fadeIn">
                 <div className="bg-white p-8 rounded-xl shadow-lg border border-gray-100 max-w-[28rem] w-full relative">
-                    <h2 className="text-2xl font-bold text-gray-900 mb-2">Enter your phone number</h2>
+                    <h2 className="text-2xl text-gray-900 mb-2">Enter your phone number</h2>
                     <p className="text-gray-500 mb-6 text-sm">
                         It is used to verify your account and future operations
                     </p>
@@ -252,7 +252,7 @@ const Dashboard = () => {
             <div className="flex flex-col items-center justify-center py-10 w-full animate-fadeIn transition-all duration-500">
                 <div className="bg-white p-8 rounded-xl shadow-lg border border-gray-100 max-w-[28rem] w-full relative">
                     <p className="text-sm font-medium text-gray-500 mb-1">1/17</p>
-                    <h2 className="text-3xl font-bold text-gray-900 mb-6 leading-tight">Add profile <br/> information</h2>
+                    <h2 className="text-3xl text-gray-900 mb-6 leading-tight">Add profile <br/> information</h2>
                     
                     <form className="flex flex-col gap-5">
                         {/* First Name */}
@@ -374,7 +374,7 @@ const Dashboard = () => {
             </div>
         ) : ['withdrawal', 'crypto-wallet', 'transaction-history'].includes(activeStepId) ? (
             <div className="flex flex-col items-start w-full max-w-[75rem] px-4 animate-fadeIn">
-                <h1 className="text-3xl font-bold text-gray-900 mb-6">Payments</h1>
+                <h1 className="text-3xl text-gray-900 mb-6">Payments</h1>
                 
                 {/* Main Payments Tabs */}
                 <div className="flex gap-8 border-b border-gray-200 w-full mb-8">
@@ -401,7 +401,7 @@ const Dashboard = () => {
                 {/* Content Area */}
                 {activeStepId === 'withdrawal' ? (
                      <>
-                        <h2 className="text-2xl font-bold text-gray-900 mb-6">Withdrawal</h2>
+                        <h2 className="text-2xl text-gray-900 mb-6">Withdrawal</h2>
                         <div className="flex gap-3">
                             <div className="text-gray-400 mt-1">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -511,7 +511,7 @@ const Dashboard = () => {
                     </div>
                 ) : activeStepId === 'crypto-wallet' ? (
                     <>
-                        <h2 className="text-3xl font-bold text-gray-900 mb-6">Crypto wallet</h2>
+                        <h2 className="text-3xl text-gray-900 mb-6">Crypto wallet</h2>
                         
                         <div className="flex flex-col mb-8">
                             <span className="text-sm text-gray-500 mb-1">Total balance</span>
@@ -711,7 +711,7 @@ const Dashboard = () => {
                 {/* MT5 Banner */}
                 <div className="w-full bg-[#E8F3EE] rounded-lg p-5 relative flex items-center justify-between mt-4">
                   <div className="flex flex-col gap-1 max-w-2xl">
-                    <h3 className="text-base font-bold text-gray-900">MT5 now available in Copy Trading</h3>
+                    <h3 className="text-base text-gray-900">MT5 now available in Copy Trading</h3>
                     <p className="text-sm text-gray-700">
                       Create your strategy on MT5, earn a performance fee and partner reward for the investors you bring.
                     </p>

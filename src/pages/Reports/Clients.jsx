@@ -13,38 +13,38 @@ const Clients = () => {
         {/* Metrics Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
           {/* Card 1: Clients */}
-          <div className="bg-white rounded-lg p-6 flex flex-col items-center justify-center shadow-[0_1px_3px_rgba(0,0,0,0.05)] border border-[#e5e7eb] min-h-[120px]">
+          <div className="bg-white rounded-lg p-2 flex flex-col items-center justify-center shadow-[0_1px_3px_rgba(0,0,0,0.05)] border border-[#e5e7eb] h-[80px]">
              <div className="flex items-baseline text-[#1d1d1d]">
-                <span className="text-4xl font-bold tracking-tight">0</span>
+                <span className="text-2xl font-bold tracking-tight">0</span>
              </div>
-             <span className="text-[14px] text-[#6b7280] mt-1 font-normal">Clients</span>
+             <span className="text-[12px] text-[#6b7280] mt-1 font-normal">Clients</span>
           </div>
           
           {/* Card 2: Volume (lots) */}
-          <div className="bg-white rounded-lg p-6 flex flex-col items-center justify-center shadow-[0_1px_3px_rgba(0,0,0,0.05)] border border-[#e5e7eb] min-h-[120px]">
+          <div className="bg-white rounded-lg p-2 flex flex-col items-center justify-center shadow-[0_1px_3px_rgba(0,0,0,0.05)] border border-[#e5e7eb] h-[80px]">
              <div className="flex items-baseline text-[#1d1d1d]">
-                <span className="text-4xl font-bold tracking-tight">0</span>
-                <span className="text-2xl font-bold text-[#9ca3af]">.0000</span>
+                <span className="text-2xl font-bold tracking-tight">0</span>
+                <span className="text-lg font-bold text-[#9ca3af]">.0000</span>
              </div>
-             <span className="text-[14px] text-[#6b7280] mt-1 font-normal">Volume (lots)</span>
+             <span className="text-[12px] text-[#6b7280] mt-1 font-normal">Volume (lots)</span>
           </div>
 
           {/* Card 3: Volume (Mln. USD) */}
-          <div className="bg-white rounded-lg p-6 flex flex-col items-center justify-center shadow-[0_1px_3px_rgba(0,0,0,0.05)] border border-[#e5e7eb] min-h-[120px]">
+          <div className="bg-white rounded-lg p-2 flex flex-col items-center justify-center shadow-[0_1px_3px_rgba(0,0,0,0.05)] border border-[#e5e7eb] h-[80px]">
              <div className="flex items-baseline text-[#1d1d1d]">
-                <span className="text-4xl font-bold tracking-tight">0</span>
-                <span className="text-2xl font-bold text-[#9ca3af]">.0000</span>
+                <span className="text-2xl font-bold tracking-tight">0</span>
+                <span className="text-lg font-bold text-[#9ca3af]">.0000</span>
              </div>
-             <span className="text-[14px] text-[#6b7280] mt-1 font-normal">Volume (Mln. USD)</span>
+             <span className="text-[12px] text-[#6b7280] mt-1 font-normal">Volume (Mln. USD)</span>
           </div>
 
           {/* Card 4: Rewards */}
-          <div className="bg-white rounded-lg p-6 flex flex-col items-center justify-center shadow-[0_1px_3px_rgba(0,0,0,0.05)] border border-[#e5e7eb] min-h-[120px]">
+          <div className="bg-white rounded-lg p-2 flex flex-col items-center justify-center shadow-[0_1px_3px_rgba(0,0,0,0.05)] border border-[#e5e7eb] h-[80px]">
              <div className="flex items-baseline text-[#1d1d1d]">
-                <span className="text-4xl font-bold tracking-tight">0</span>
-                <span className="text-2xl font-bold text-[#9ca3af]">.0000</span>
+                <span className="text-2xl font-bold tracking-tight">0</span>
+                <span className="text-lg font-bold text-[#9ca3af]">.0000</span>
              </div>
-             <span className="text-[14px] text-[#6b7280] mt-1 font-normal">Rewards</span>
+             <span className="text-[12px] text-[#6b7280] mt-1 font-normal">Rewards</span>
           </div>
         </div>
 

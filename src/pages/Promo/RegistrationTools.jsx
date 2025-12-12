@@ -40,7 +40,7 @@ const RegistrationTools = () => {
        <div className="w-full max-w-[1400px] mx-auto">
         {/* Header */}
         <div className="mb-6">
-          <h1 className="text-[32px] font-bold text-[#1d1d1d] mb-2 font-['aktiv-grotesk']">Registration tools</h1>
+          <h1 className="text-[32px] text-[#1d1d1d] mb-2">Registration tools</h1>
           <p className="text-[#6b7280] text-[15px]">You can configure your codes, links and campaigns binding here.</p>
         </div>
 
@@ -72,7 +72,7 @@ const RegistrationTools = () => {
 
             {/* Partner Code Section */}
             <section>
-              <h2 className="text-[18px] font-bold text-[#1d1d1d] mb-2 flex items-center gap-2">
+              <h2 className="text-[18px] text-[#1d1d1d] mb-2 flex items-center gap-2">
                 Partner code 
                 <Info size={16} className="text-gray-400" />
               </h2>
@@ -111,7 +111,7 @@ const RegistrationTools = () => {
 
              {/* Web Link Section */}
              <section>
-              <h2 className="text-[18px] font-bold text-[#1d1d1d] mb-4">Web link</h2>
+              <h2 className="text-[18px] text-[#1d1d1d] mb-4">Web link</h2>
               
               <div className="border border-gray-200 rounded p-6 bg-white shrink-0">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -155,7 +155,7 @@ const RegistrationTools = () => {
 
              {/* Mobile Link Section */}
              <section>
-              <h2 className="text-[18px] font-bold text-[#1d1d1d] mb-4">Mobile link</h2>
+              <h2 className="text-[18px] text-[#1d1d1d] mb-4">Mobile link</h2>
               
               <div className="border border-gray-200 rounded p-6 bg-white shrink-0">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -321,7 +321,7 @@ const RegistrationTools = () => {
           <div className="bg-white rounded-lg w-full max-w-[480px] shadow-xl animate-in fade-in zoom-in duration-200">
             {/* Modal Header */}
             <div className="flex items-center justify-between px-6 py-5">
-              <h2 className="text-[20px] font-bold text-[#1d1d1d]">Create campaigns</h2>
+              <h2 className="text-[20px] text-[#1d1d1d]">Create campaigns</h2>
               <button 
                 onClick={() => setIsCreateCampaignOpen(false)}
                 className="text-gray-400 hover:text-gray-600 transition-colors"
