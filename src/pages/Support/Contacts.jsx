@@ -34,7 +34,7 @@ const Contacts = () => {
             <span>+357 25 030 959</span>
           </a>
           <a 
-            href="mailto:support@exness.com" 
+            href="mailto:support@fincrm.com" 
             className="flex items-center gap-2 px-4 py-2.5 bg-gray-50 border border-gray-200 rounded-lg text-sm font-medium text-gray-700 hover:bg-gray-100 transition-colors"
           >
             <AtSign size={18} className="text-gray-500" />

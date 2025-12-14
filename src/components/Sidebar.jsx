@@ -87,7 +87,7 @@ const sidebarItems = [
     subItems: [
       { id: 'promo-materials', label: 'Promo Materials', link: '/promo/materials/' },
       { id: 'registration-tools', label: 'Registration tools', link: '/promo/registration_tools/codes' },
-      { id: 'exness-overview', label: 'Exness overview', link: 'https://ex.guide/4nJRiUJ', isExternal: true },
+      { id: 'fincrm-overview', label: 'FINCRM overview', link: 'https://ex.guide/4nJRiUJ', isExternal: true },
       { id: 'advertising-guidelines', label: 'Advertising guidelines', link: 'https://ex.guide/4fnsvmH', isExternal: true },
     ],
   },
@@ -312,14 +312,18 @@ const Sidebar = ({ isExpanded, setIsExpanded, isMobileMenuOpen }) => {
   const controlLabel = isExpanded ? 'Collapse' : 'Expand';
 
   return (
-    <div
-      onMouseEnter={() => !isExpanded && setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
-      className={`fixed inset-0 top-[57px] z-40 w-full bg-white border-r border-gray-200 transition-all duration-300 ease-in-out flex-shrink-0 
-        ${isMobileMenuOpen ? 'translate-x-0' : '-translate-x-full'} 
-        md:translate-x-0 md:static md:flex md:flex-col md:h-full 
-        ${showExpanded ? 'md:w-[280px]' : 'md:w-[56px]'}`}
-    >
+    <>
+      <div 
+        className={`hidden md:block flex-shrink-0 transition-all duration-300 ease-in-out ${isExpanded ? 'w-[280px]' : 'w-[56px]'}`}
+      />
+      <div
+        onMouseEnter={() => !isExpanded && setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
+        className={`fixed inset-0 top-[57px] z-40 w-full bg-white border-r border-gray-200 transition-all duration-300 ease-in-out flex-shrink-0 
+          ${isMobileMenuOpen ? 'translate-x-0' : '-translate-x-full'} 
+          md:translate-x-0 md:flex md:flex-col 
+          ${showExpanded ? 'md:w-[280px]' : 'md:w-[56px]'}`}
+      >
       {/* Scrollable Navigation Area */}
       <div className="flex-1 overflow-y-auto space-y-2 p-2 hidden-scrollbar">
         {sidebarItems.map((item) => (
@@ -364,6 +368,7 @@ const Sidebar = ({ isExpanded, setIsExpanded, isMobileMenuOpen }) => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

@@ -1,8 +1,7 @@
 import { useState, useRef, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Bell, UserCircle, Menu, X, Info, Settings, LogOut } from 'lucide-react';
-import exnessLogo from '/logo.svg';
-import exnessLogoMobile from '/logoMobile.svg';
+// Logo imports removed as we use text logo now
 
 // The main Topbar component
 const Topbar = ({ isMobileMenuOpen, setIsMobileMenuOpen }) => {
@@ -85,9 +84,16 @@ const Topbar = ({ isMobileMenuOpen, setIsMobileMenuOpen }) => {
             {/* Logo */}
             <div className="flex-shrink-0 flex items-center">
               {/* Desktop Logo */}
-              <img src={exnessLogo} alt="exness Partners" className="hidden md:block h-10 w-auto" />
+              <div className="hidden md:flex items-center text-xl font-bold tracking-tight text-[#151a30]">
+                <img src="/finCRM-logo-small.png" alt="FINCRM" className="h-8 w-auto mr-3" />
+                <span>FINCRM</span>
+                <span className="ml-1.5 font-normal text-[#889da9]">Partners</span>
+              </div>
               {/* Mobile Logo */}
-              <img src={exnessLogoMobile} alt="exness Partners" className="block md:hidden h-8 w-auto" />
+              <div className="flex md:hidden items-center text-lg font-bold tracking-tight text-[#151a30]">
+                <img src="/finCRM-logo-small.png" alt="FINCRM" className="h-6 w-auto mr-2" />
+                <span>FINCRM</span>
+              </div>
             </div>
           </div>
 

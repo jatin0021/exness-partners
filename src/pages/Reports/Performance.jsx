@@ -11,11 +11,11 @@ const Performance = () => {
 
     // Mock Data
     const mockData = [
-        { id: 1, link: 'https://one.exness-track.com/a/c_12345', clicks: 1245, registrations: 84, conversion: '6.75%', startTrading: 23, volMln: '4.2000', volLots: '240.50', profit: '540.20' },
-        { id: 2, link: 'https://one.exness-track.com/a/c_67890', clicks: 892, registrations: 45, conversion: '5.04%', startTrading: 12, volMln: '1.1500', volLots: '85.10', profit: '125.00' },
-        { id: 3, link: 'https://one.exness-track.com/a/c_11223', clicks: 2301, registrations: 156, conversion: '6.78%', startTrading: 56, volMln: '8.4500', volLots: '520.00', profit: '1250.50' },
-        { id: 4, link: 'https://one.exness-track.com/a/c_44556', clicks: 560, registrations: 22, conversion: '3.92%', startTrading: 5, volMln: '0.4500', volLots: '32.40', profit: '45.80' },
-        { id: 5, link: 'https://one.exness-track.com/a/c_99887', clicks: 125, registrations: 8, conversion: '6.40%', startTrading: 2, volMln: '0.1200', volLots: '10.50', profit: '15.00' },
+        { id: 1, link: 'https://one.fincrm-track.com/a/c_12345', clicks: 1245, registrations: 84, conversion: '6.75%', startTrading: 23, volMln: '4.2000', volLots: '240.50', profit: '540.20' },
+        { id: 2, link: 'https://one.fincrm-track.com/a/c_67890', clicks: 892, registrations: 45, conversion: '5.04%', startTrading: 12, volMln: '1.1500', volLots: '85.10', profit: '125.00' },
+        { id: 3, link: 'https://one.fincrm-track.com/a/c_11223', clicks: 2301, registrations: 156, conversion: '6.78%', startTrading: 56, volMln: '8.4500', volLots: '520.00', profit: '1250.50' },
+        { id: 4, link: 'https://one.fincrm-track.com/a/c_44556', clicks: 560, registrations: 22, conversion: '3.92%', startTrading: 5, volMln: '0.4500', volLots: '32.40', profit: '45.80' },
+        { id: 5, link: 'https://one.fincrm-track.com/a/c_99887', clicks: 125, registrations: 8, conversion: '6.40%', startTrading: 2, volMln: '0.1200', volLots: '10.50', profit: '15.00' },
     ];
 
     // Simulate initial data load

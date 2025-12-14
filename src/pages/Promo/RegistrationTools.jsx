@@ -31,7 +31,7 @@ const RegistrationTools = () => {
       id: 1,
       account: '-',
       code: '4xeij4lc8j',
-      link: 'https://one.exnessonelink.com/a/4xeij4lc8j'
+      link: 'https://one.fincrmonelink.com/a/4xeij4lc8j'
     }
   ];
 
@@ -77,7 +77,7 @@ const RegistrationTools = () => {
                 <Info size={16} className="text-gray-400" />
               </h2>
               <p className="text-[14px] text-gray-600 mb-6 leading-relaxed max-w-[800px]">
-                Partner code can be shared with clients. Clients can input it during registration process. On the <a href="https://my.exness.com/accounts/sign-up" target="_blank" rel="noreferrer" className="text-[#1976d2] hover:underline">registration page</a> client needs to click on a checkbox "I'm registering under partner" and input code.
+                Partner code can be shared with clients. Clients can input it during registration process. On the <a href="https://my.fincrm.com/accounts/sign-up" target="_blank" rel="noreferrer" className="text-[#1976d2] hover:underline">registration page</a> client needs to click on a checkbox "I'm registering under partner" and input code.
               </p>
               
               <div className="border border-gray-200 rounded p-6 bg-white shrink-0">
@@ -86,14 +86,14 @@ const RegistrationTools = () => {
                          <label className="text-[12px] text-gray-500 mb-1 block">Domain</label>
                          <div className="relative">
                             <select className="w-full h-10 px-3 py-2 bg-white border border-gray-300 rounded text-[14px] text-gray-900 appearance-none focus:outline-none focus:border-blue-500 cursor-pointer">
-                                <option>one.exnessonelink.com</option>
+                                <option>one.fincrmonelink.com</option>
                             </select>
                             <ChevronDown size={16} className="absolute right-3 top-3 text-gray-500 pointer-events-none" />
                          </div>
                     </div>
                     
                     <div>
-                         <p className="text-[13px] text-gray-500 mb-3">Can be used only for client registering on Exness website</p>
+                         <p className="text-[13px] text-gray-500 mb-3">Can be used only for client registering on FINCRM website</p>
                          <div className="flex items-end justify-between border-b border-gray-200 pb-2">
                             <div>
                                 <p className="text-[14px] font-bold text-gray-900 mb-1">Partner code</p>
@@ -141,7 +141,7 @@ const RegistrationTools = () => {
                          <div className="flex items-end justify-between border-b border-gray-200 pb-2">
                             <div className="w-full overflow-hidden mr-4">
                                 <p className="text-[14px] font-bold text-gray-900 mb-1">Main web link</p>
-                                <p className="text-[16px] text-[#1d1d1d] truncate">https://one.exnessonelink.com/a/4xeij4lc8j</p>
+                                <p className="text-[16px] text-[#1d1d1d] truncate">https://one.fincrmonelink.com/a/4xeij4lc8j</p>
                             </div>
                             <button className="flex items-center gap-1.5 text-[13px] text-[#1d1d1d] font-medium hover:bg-gray-50 px-3 py-1.5 rounded transition bg-transparent shrink-0 uppercase tracking-wide">
                                 <Copy size={16} />
@@ -174,7 +174,7 @@ const RegistrationTools = () => {
                          <div className="flex items-end justify-between border-b border-gray-200 pb-2">
                              <div className="w-full overflow-hidden mr-4">
                                 <p className="text-[14px] font-bold text-gray-900 mb-1">Mobile link</p>
-                                <p className="text-[16px] text-[#1d1d1d] truncate">https://one.exnessonelink.com/a/4xeij4lc8j?platform=mobile</p>
+                                <p className="text-[16px] text-[#1d1d1d] truncate">https://one.fincrmonelink.com/a/4xeij4lc8j?platform=mobile</p>
                             </div>
                             <button className="flex items-center gap-1.5 text-[13px] text-[#1d1d1d] font-medium hover:bg-gray-50 px-3 py-1.5 rounded transition bg-transparent shrink-0 uppercase tracking-wide">
                                 <Copy size={16} />

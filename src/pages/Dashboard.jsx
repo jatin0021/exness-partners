@@ -812,7 +812,7 @@ const Dashboard = () => {
                         <>
                           <div className="mb-6">
                             <div className="text-blue-500 text-center text-base break-all hover:underline cursor-pointer font-medium">
-                              https://one.exnessonelink.com/a/4xeij4lc8j
+                              https://one.fincrmonelink.com/a/4xeij4lc8j
                             </div>
                           </div>
 

@@ -13,7 +13,7 @@ const AccountSettings = () => {
     {
       id: 'notification-settings',
       title: 'Notification settings',
-      description: 'You can select the communications from Exness',
+      description: 'You can select the communications from FINCRM',
       link: '/settings/profile/notifications',
     },
     {
@@ -26,7 +26,7 @@ const AccountSettings = () => {
       id: 'client-allocation',
       title: 'Client allocation check',
       description: 'Check if a client is allocated to you under your partner link',
-      link: '#', // Placeholder
+      link: '/settings/profile/client-allocation',
     },
   ];
 

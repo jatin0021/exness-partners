@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Topbar from './components/Topbar'
 import Sidebar from './components/Sidebar'
 import Dashboard from './pages/Dashboard'
-import ExnessTerminal from './pages/Trading/ExnessTerminal'
+import FINCRMTerminal from './pages/Trading/FINCRMTerminal'
 
 // Reports
 import Clients from './pages/Reports/Clients'
@@ -29,6 +29,7 @@ import AccountSettings from './pages/AccountSettings'
 import PersonalInformation from './pages/PersonalInformation'
 import NotificationSettings from './pages/NotificationSettings'
 import MarketingIntegration from './pages/MarketingIntegration'
+import ClientAllocationCheck from './pages/ClientAllocationCheck'
 
 const App = () => {
   const [isExpanded, setIsExpanded] = useState(true);
@@ -72,13 +73,14 @@ const App = () => {
               <Route path="/support/legal" element={<Legal />} />
 
               {/* Legacy/Extra */}
-              <Route path="/exness-terminal" element={<ExnessTerminal />} />
+              <Route path="/fincrm-terminal" element={<FINCRMTerminal />} />
               
               {/* Account Settings */}
               <Route path="/settings/profile" element={<AccountSettings />} />
               <Route path="/settings/profile/personal-info" element={<PersonalInformation />} />
               <Route path="/settings/profile/notifications" element={<NotificationSettings />} />
               <Route path="/settings/profile/marketing-integration" element={<MarketingIntegration />} />
+              <Route path="/settings/profile/client-allocation" element={<ClientAllocationCheck />} />
             </Routes>
           </main>
         </div>

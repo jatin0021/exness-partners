@@ -10,37 +10,37 @@ const Legal = () => {
             {/* Left Column: Main Content */}
             <div className="flex-1 space-y-6 text-sm leading-relaxed">
                 <p>
-                Exness (SC) Ltd is a Securities Dealer registered in Seychelles with registration number 8423606-1 and authorised by the Financial Services Authority (FSA) with licence number SD025. The registered office of Exness (SC) Ltd is at 9A CT House, 2nd floor, Providence, Mahe, Seychelles.
+                FINCRM (SC) Ltd is a Securities Dealer registered in Seychelles with registration number 8423606-1 and authorised by the Financial Services Authority (FSA) with licence number SD025. The registered office of FINCRM (SC) Ltd is at 9A CT House, 2nd floor, Providence, Mahe, Seychelles.
                 </p>
                 <p>
-                Exness B.V. is a Securities Intermediary registered in Curaçao with registration number 148698(0) and authorised by the Central Bank of Curaçao and Sint Maarten (CBCS) with licence number 0003LSI. The registered office of Exness B.V. is at Emancipatie Boulevard Dominico F. “Don” Martina 31, Curaçao.
+                FINCRM B.V. is a Securities Intermediary registered in Curaçao with registration number 148698(0) and authorised by the Central Bank of Curaçao and Sint Maarten (CBCS) with licence number 0003LSI. The registered office of FINCRM B.V. is at Emancipatie Boulevard Dominico F. “Don” Martina 31, Curaçao.
                 </p>
                 <p>
-                Exness (VG) Ltd is authorised by the Financial Services Commission (FSC) in BVI with registration number 2032226 and investment business licence number SIBA/L/20/1133. The registered office of Exness (VG) Ltd is at Trinity Chambers, P.O. Box 4301, Road town, Tortola, BVI.
+                FINCRM (VG) Ltd is authorised by the Financial Services Commission (FSC) in BVI with registration number 2032226 and investment business licence number SIBA/L/20/1133. The registered office of FINCRM (VG) Ltd is at Trinity Chambers, P.O. Box 4301, Road town, Tortola, BVI.
                 </p>
                 <p>
-                Exness ZA (PTY) Ltd is authorised by the Financial Sector Conduct Authority (FSCA) in South Africa as a Financial Service Provider (FSP) with registration number 2020/234138/07 and FSP number 51024.
+                FINCRM ZA (PTY) Ltd is authorised by the Financial Sector Conduct Authority (FSCA) in South Africa as a Financial Service Provider (FSP) with registration number 2020/234138/07 and FSP number 51024.
                 </p>
                 <p>
-                Exness (KE) Limited is registered in Kenya with registration number PVT-LRUDJJB and is regulated by the Capital Markets Authority in Kenya as a Non-dealing Online Foreign Exchange Broker under license number 162. The registered office of Exness (KE) Limited is at the Courtyard, 2nd Floor, General Mathenge Road, Westlands, Nairobi.
+                FINCRM (KE) Limited is registered in Kenya with registration number PVT-LRUDJJB and is regulated by the Capital Markets Authority in Kenya as a Non-dealing Online Foreign Exchange Broker under license number 162. The registered office of FINCRM (KE) Limited is at the Courtyard, 2nd Floor, General Mathenge Road, Westlands, Nairobi.
                 </p>
                 <p>
-                Exness Investment Bank Ltd holds a license to carry on Investment Banking Business from the Labuan Financial Services Authority (LFSA) with licence number 210141BI.
+                FINCRM Investment Bank Ltd holds a license to carry on Investment Banking Business from the Labuan Financial Services Authority (LFSA) with licence number 210141BI.
                 </p>
                 <p>
-                The entities above are duly authorized to operate under the Exness brand and trademarks.
+                The entities above are duly authorized to operate under the FINCRM brand and trademarks.
                 </p>
                 <p>
-                The information on this website may only be copied with the express written permission of Exness. General Risk Warning: CFDs are leveraged products. Trading in CFDs carries a high level of risk thus may not be appropriate for all investors. The investment value can both increase and decrease and the investors may lose all their invested capital. Under no circumstances shall the Company have any liability to any person or entity for any loss or damage in whole or part caused by, resulting from, or relating to any transactions related to CFDs.
+                The information on this website may only be copied with the express written permission of FINCRM. General Risk Warning: CFDs are leveraged products. Trading in CFDs carries a high level of risk thus may not be appropriate for all investors. The investment value can both increase and decrease and the investors may lose all their invested capital. Under no circumstances shall the Company have any liability to any person or entity for any loss or damage in whole or part caused by, resulting from, or relating to any transactions related to CFDs.
                 </p>
                 <p>
-                Exness complies with the Payment Card Industry Data Security Standard (PCI DSS) to ensure your security and privacy. We conduct regular vulnerability scans and penetration tests in accordance with the PCI DSS requirements for our business model.
+                FINCRM complies with the Payment Card Industry Data Security Standard (PCI DSS) to ensure your security and privacy. We conduct regular vulnerability scans and penetration tests in accordance with the PCI DSS requirements for our business model.
                 </p>
                 <p className="flex items-center gap-1">
                     <span>Email:</span>
-                    <a href="mailto:support@exness.com" className="text-blue-600 hover:underline">support@exness.com</a>
+                    <a href="mailto:support@fincrm.com" className="text-blue-600 hover:underline">support@fincrm.com</a>
                 </p>
-                <p>© 2008 - 2025 Exness</p>
+                <p>© 2008 - 2025 FINCRM</p>
             </div>
 
             {/* Right Column: Links */}
