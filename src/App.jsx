@@ -31,6 +31,25 @@ import NotificationSettings from './pages/NotificationSettings'
 import MarketingIntegration from './pages/MarketingIntegration'
 import ClientAllocationCheck from './pages/ClientAllocationCheck'
 
+// Admin Pages
+import AdminDashboard from './pages/Admin/Dashboard'
+import IBOverview from './pages/Admin/IBOverview'
+import IBRequests from './pages/Admin/IBRequests'
+import IBProfiles from './pages/Admin/IBProfiles'
+import TradersProfile from './pages/Admin/TradersProfile'
+import MT5Groups from './pages/Admin/MT5Groups'
+import CommissionStructures from './pages/Admin/CommissionStructures'
+import AllSymbols from './pages/Admin/AllSymbols'
+import SymbolsPipValues from './pages/Admin/SymbolsPipValues'
+import IBWithdrawals from './pages/Admin/IBWithdrawals'
+import WithdrawalHistory from './pages/Admin/WithdrawalHistory'
+import ClientLinking from './pages/Admin/ClientLinking'
+
+import CommissionDistribution from './pages/Admin/CommissionDistribution'
+import ClaimedRewards from './pages/Admin/ClaimedRewards'
+import IBReports from './pages/Admin/IBReports'
+import AdminPagePlaceholder from './pages/Admin/Placeholder'
+
 const App = () => {
   const [isExpanded, setIsExpanded] = useState(true);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -81,6 +100,28 @@ const App = () => {
               <Route path="/settings/profile/notifications" element={<NotificationSettings />} />
               <Route path="/settings/profile/marketing-integration" element={<MarketingIntegration />} />
               <Route path="/settings/profile/client-allocation" element={<ClientAllocationCheck />} />
+
+              {/* Admin Panel Routes */}
+              <Route path="/admin" element={<AdminDashboard />} />
+              <Route path="/admin/ib-management" element={<IBOverview />} />
+              <Route path="/admin/ib-management/requests" element={<IBRequests />} />
+              <Route path="/admin/ib-management/profiles" element={<IBProfiles />} />
+              <Route path="/admin/ib-management/traders" element={<TradersProfile />} />
+              <Route path="/admin/ib-management/commissions" element={<MT5Groups />} />
+              <Route path="/admin/ib-management/commission-structures" element={<CommissionStructures />} />
+              <Route path="/admin/ib-management/all-symbols" element={<AllSymbols />} />
+              
+              <Route path="/admin/trading-management/symbols" element={<SymbolsPipValues />} />
+              <Route path="/admin/trading-management/ib-withdrawals" element={<IBWithdrawals />} />
+              <Route path="/admin/trading-management/client-linking" element={<ClientLinking />} />
+              
+              <Route path="/admin/reports/withdrawal-history" element={<WithdrawalHistory />} />
+              
+              <Route path="/admin/group-management/trading-groups" element={<MT5Groups />} />
+              <Route path="/admin/group-management/commission-distribution" element={<CommissionDistribution />} />
+              
+              <Route path="/admin/rewards/claims" element={<ClaimedRewards />} />
+              <Route path="/admin/ib-reports" element={<IBReports />} />
             </Routes>
           </main>
         </div>
